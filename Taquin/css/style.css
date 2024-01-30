@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: brown;
+}
+
+.jeu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    grid-gap: 5px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #cccccc;
+    margin: 5px;
+}
+
+#compteurDeplacements {
+    font-size: 18px;
+}
+
+.button2{
+    background-color: #cccccc;
+}
+
+.button2:hover{
+    background-color: #f0f0f0;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+}
