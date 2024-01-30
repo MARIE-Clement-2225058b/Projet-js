@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.jeu-container {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#compteurDeplacements {
+    font-size: 18px;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+}
