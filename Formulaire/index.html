@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vérification de Formulaire</title>
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Formulaire de Vérification</h2>
+
+<form id="monFormulaire" onsubmit="return verifierFormulaire(event)">
+
+  <p>Etape 1 : Identité</p>
+
+  <label>Civilité :</label>
+  <input type="radio" id="choix1" name="choix" value="option1">
+  <label for="choix1">Monsieur</label>
+  <input type="radio" id="choix2" name="choix" value="option2">
+  <label for="choix2">Madame</label>
+  <p id="erreurChoix" class="message-erreur hidden">Veillez faire ce choix !</p>
+  <br>
+  <br>
+
+  <label for="nom">Nom :</label>
+  <input type="text" id="nom" name="nom">
+  <p id="erreurNom" class="message-erreur hidden">Veillez entrer votre nom !</p>
+
+  <br>
+
+  <label for="prenom">Prénom :</label>
+  <input type="text" id="prenom" name="prenom">
+    <p id="erreurPrenom" class="message-erreur hidden">Veillez entrer votre prénom !</p>
+  <br>
+
+  <label for="email">Email :</label>
+  <input type="text" id="email" name="email">
+    <p id="erreurEmail" class="message-erreur hidden">Veillez entrer votre email !</p>
+  <br>
+
+  <label for="telephone">Téléphone :</label>
+  <input type="text" id="telephone" name="telephone">
+    <p id="erreurTelephone" class="message-erreur hidden">Veillez entrer votre numéro de téléphone !</p>
+  <br>
+
+  <p>Etape 2 : Adresse de livraison</p>
+
+  <br>
+
+  <label for="zonetexte">Adresse :</label>
+  <textarea id="zonetexte" name="zonetexte" rows="5" cols="50"></textarea>
+  <p id="erreurZonetexte" class="message-erreur hidden">Veillez entrer votre adresse !</p>
+  <br>
+
+  <label for="cp">Code postal :</label>
+  <input type="text" id="cp" name="cp">
+  <p id="erreurCp" class="message-erreur hidden">Veillez entrer votre code postal !</p>
+  <br>
+
+  <label for="ville">Ville :</label>
+  <input type="text" id="ville" name="ville">
+  <p id="erreurVille" class="message-erreur hidden">Veillez entrer votre ville !</p>
+  <br>
+
+  <p>Etape 3 : Information CB</p>
+
+  <br>
+
+  <label>Type de carte bancaire :</label>
+  <input type="radio" id="choix1cb" name="choix2" value="option1">
+  <label for="choix1cb">Visa</label>
+  <input type="radio" id="choix2cb" name="choix2" value="option2">
+  <label for="choix2cb">AmEx</label>
+  <input type="radio" id="choix3cb" name="choix2" value="option3">
+  <label for="choix3cb">Mastercard</label>
+  <p id="erreurChoix2" class="message-erreur hidden">Veillez faire ce choix !</p>
+
+  <br>
+  <br>
+  <label for="numCart">Numéro de carte :</label>
+  <input type="text" id="numCart" name="numCart">
+  <p id="erreurNumCart" class="message-erreur hidden">Veillez entrer votre numéro de carte !</p>
+  <br>
+
+  <label for="cods">Code sécurité :</label>
+  <input type="text" id="cods" name="cods">
+  <p id="erreurCods" class="message-erreur hidden">Veillez entrer votre code sécurité !</p>
+  <br>
+
+  <input type="submit" value="Valider">
+
+</form>
+
+</body>
+</html>

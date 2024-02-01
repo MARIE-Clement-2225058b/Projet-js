@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom,  #000, darkred, #000);
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to bottom, #ff0000 0%, #990000 100%);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #990000 0%, #ff0000 100%);
+}
+
+
+.message-erreur {
+    color: red;
+    border-radius: 3px;
+    border-color: red;
+    border: 1px solid;
+    padding: 5px;
+    margin-top: 5px;
+    display: flow;
+}
+
+.champ-invalide {
+    border: 1px solid red;
+}
+
+
+form p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+
+form label {
+    display: inline-block;
+    margin: 5px;
+    font-weight: bold;
+}
+
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+
+.hidden {
+    display: none;
+}
