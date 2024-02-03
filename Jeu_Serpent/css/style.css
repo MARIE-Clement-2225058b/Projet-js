@@ -24,8 +24,8 @@ div {
 }
 
 .snake {
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     background-color: #26bd26;
     position: absolute;
     z-index: 1;
@@ -37,8 +37,8 @@ div {
 }
 
 .food {
-    width: 20px;
-    height: 20px;
+    width: 19px;
+    height: 19px;
     background-color: red;
     position: absolute;
 }
